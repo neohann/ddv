@@ -2,8 +2,22 @@ var figure = {
     "frames": [], 
     "layout": {
         "autosize": true, 
+        "breakpoints": [], 
         "hovermode": "closest", 
-        "breakpoints": []
+        "annotations": [
+            {
+                "xref": "paper", 
+                "yref": "paper", 
+                "text": "&nbsp;Percentage of Pet Households&nbsp;", 
+                "y": -0.15, 
+                "x": 0.5, 
+                "font": {
+                    "size": 19
+                }, 
+                "showarrow": false
+            }
+        ], 
+        "title": ""
     }, 
     "data": [
         {
