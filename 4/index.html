@@ -50,7 +50,7 @@
 
     <!-- Begin page content -->
 
-<script type="text/javascript" src="plotlyjs-bundle.js"></script>
+        <script type="text/javascript" src="plotlyjs-bundle.js"></script>
             
             
         <script type="text/javascript" src="figure.js"></script>
@@ -78,13 +78,16 @@
                     }
                     resizeDebounce = window.setTimeout(resizePlot, 100);
                 });
+                
 
+                
                 Plotly.plot(gd,  {
                     data: figure.data,
                     layout: figure.layout,
                     frames: figure.frames,
-                    config: {"mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A", "linkText": "Export to plot.ly", "showLink": false}
-
+                    config: {"mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A", "linkText": "Export to plot.ly", "showLink": true}
+                });
+                
            }());
         </script>
 
