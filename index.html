@@ -58,28 +58,77 @@
         <div class="container">
 
           <div class="page-header">
-            <h1>Pets Pets</h1>
+            <h1>Pet Households in US</h1>
           </div>
           <p class="lead">
-                          According to the U.S Census Bureau's 2015 estimate, the offical poverty rate in <b>United States of America</b> is 13.5 percent.</p>
+                          What is the top three states with the highest number of pet households is an interesting question. Someone may take a guess. New York? Pennsylvania? Nope. If you are interested in this question, this Pet households narrative visualization has the right information for you.</p>
+          <p class="lead">
+                          Let me first define what is “pet” mean here. It simply means ONLY dogs and cats. Other kinds of animals such as birds and snakes are not included in this data.  
+                         <br>
+                         
+          <p class="lead">
+                         
+
+                         California has the highest number of household who has pets. This means if one household has only cats, only dogs or both cats and dogs is included here.  California is the number one in number of pet households. Did you have the right guess?<br>
 
                          <div class="text-center">
-                         <a href="https://poverty.ucdavis.edu/faq/what-current-poverty-rate-united-states" target="_blank">
-                                  <p class="lead">https://poverty.ucdavis.edu/faq/what-current-poverty-rate-united-states</p></a>
+                         Reference Data:<br>
+                         <a href="https://www.avma.org/KB/Resources/Statistics/Pages/Market-research-statistics-US-pet-ownership.aspx" target="_blank">
+                                  <p class="lead">
+                                   
+                                   https://www.avma.org/KB/Resources/Statistics/Pages/Market-research-statistics-US-pet-ownership.aspx</p></a>
                          </div>
-          <p class="lead">
-                         That year, an estimate 43 million americans lived in the poverty according to the official measure.
-                         According to the Census Bureau, 19.4 million people reported deep poverty, which means a household income below 50 percent of their 2015 poverty threshold.
-                         These individuals represented an estimated 6.1 percent of all Americans and 44.6 percent of those in poverty.
-                         <br>
-
                          </p>
-         <br>
-         <br>
-         <!-- <div class="container" id="vegaChart"> -->
 
-           <div class="stemVis vega-embed" id="stemVis"><canvas width="1038" height="306" class="marks"></canvas><div class="vega-bindings"></div></div>
-        <!-- </div> -->
+
+         <br>
+         <br>
+         
+
+         <script type="text/javascript" src="plotlyjs-bundle.js"></script>
+            
+                <script type="text/javascript" src="plotly-geo-assets.js"></script>
+            
+            
+        <script type="text/javascript" src="figure.js"></script>
+        
+        <div id="0e3484e3-cb79-4679-b7bd-3d7dc181334c" style="width: 100%; height: 100%;" class="plotly-graph-div"></div>
+        <script type="text/javascript">
+            (function(){
+                window.PLOTLYENV={'BASE_URL': 'https://plot.ly'};
+
+                var gd = document.getElementById('0e3484e3-cb79-4679-b7bd-3d7dc181334c')
+                var resizeDebounce = null;
+
+                function resizePlot() {
+                    var bb = gd.getBoundingClientRect();
+                    Plotly.relayout(gd, {
+                        width: bb.width,
+                        height: bb.height
+                    });
+                }
+
+                
+                window.addEventListener('resize', function() {
+                    if (resizeDebounce) {
+                        window.clearTimeout(resizeDebounce);
+                    }
+                    resizeDebounce = window.setTimeout(resizePlot, 100);
+                });
+                
+
+                
+                Plotly.plot(gd,  {
+                    data: figure.data,
+                    layout: figure.layout,
+                    frames: figure.frames,
+                    config: {"mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A", "linkText": "Export to plot.ly", "showLink": false}
+                });
+                
+           }());
+        </script>
+
+
 
          <div class="container" id="aboutVisualization" style="padding-bottom: 30px;">
            <button class="accordion">ABOUT THE VISUALIZATION--SCENE 1</button>
@@ -111,7 +160,7 @@
          </div>
          <div class="container">
            <div class="col-lg-12 text-center">
-           <a href="https://ak-org.github.io/second.html">
+           <a href="https://neohann.github.io/ddv/2/index.html">
            <button type="button" class="btn btn-default btn-lg btn-primary">
              <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>Next
            </button></a>
