@@ -2,17 +2,32 @@ var figure = {
     "frames": [], 
     "layout": {
         "autosize": true, 
-        "title": "Third highest Number of Pet Hoursehoulds -- Florida", 
+        "title": "Third Highest Number of Pet Hoursehoulds -- Florida", 
         "showlegend": false, 
         "breakpoints": [], 
         "hovermode": "closest", 
         "geo": {
             "scope": "usa"
-        }
+        }, 
+        "annotations": [
+            {
+                "xref": "x", 
+                "yref": "y", 
+                "text": "Florida", 
+                "ay": 20, 
+                "ax": 68, 
+                "y": 0.1832460732984293, 
+                "x": 0.7351190476190477, 
+                "font": {
+                    "size": 23
+                }, 
+                "showarrow": true
+            }
+        ]
     }, 
     "data": [
         {
-            "locationssrc": "aircar:15:1436b4", 
+            "locationssrc": "aircar:17:48ea8e", 
             "zmax": 6865, 
             "uid": "37e842", 
             "colorscale": [
@@ -33,13 +48,13 @@ var figure = {
                     "rgb(178,10,28)"
                 ]
             ], 
-            "zsrc": "aircar:15:7111fc", 
+            "zsrc": "aircar:17:7bd53e", 
             "type": "choropleth", 
             "zmin": 63, 
             "locations": [
                 "Location", 
-                "California", 
-                "Texas", 
+                "C", 
+                "T", 
                 "FL", 
                 "New York", 
                 "Pennsylvania", 

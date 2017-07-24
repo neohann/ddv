@@ -2,17 +2,32 @@ var figure = {
     "frames": [], 
     "layout": {
         "autosize": true, 
-        "title": "Second highest Number of Pet Hoursehoulds -- Texas", 
+        "title": "Second Highest Number of Pet Hoursehoulds -- Texas", 
         "showlegend": false, 
         "breakpoints": [], 
         "hovermode": "closest", 
         "geo": {
             "scope": "usa"
-        }
+        }, 
+        "annotations": [
+            {
+                "xref": "x", 
+                "yref": "y", 
+                "text": "Texas", 
+                "ay": 10, 
+                "ax": 72, 
+                "y": 0.10732984293193715, 
+                "x": 0.5113095238095239, 
+                "font": {
+                    "size": 23
+                }, 
+                "showarrow": true
+            }
+        ]
     }, 
     "data": [
         {
-            "locationssrc": "aircar:15:1436b4", 
+            "locationssrc": "aircar:17:48ea8e", 
             "zmax": 6865, 
             "uid": "37e842", 
             "colorscale": [
@@ -33,14 +48,14 @@ var figure = {
                     "rgb(178,10,28)"
                 ]
             ], 
-            "zsrc": "aircar:15:7111fc", 
+            "zsrc": "aircar:17:7bd53e", 
             "type": "choropleth", 
             "zmin": 63, 
             "locations": [
                 "Location", 
-                "California", 
+                "C", 
                 "TX", 
-                "Florida", 
+                "F", 
                 "New York", 
                 "Pennsylvania", 
                 "Ohio", 

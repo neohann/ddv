@@ -8,11 +8,26 @@ var figure = {
         "hovermode": "closest", 
         "geo": {
             "scope": "usa"
-        }
+        }, 
+        "annotations": [
+            {
+                "xref": "x", 
+                "yref": "y", 
+                "text": "California", 
+                "ay": -54, 
+                "ax": -48, 
+                "y": 0.6282722513089005, 
+                "x": 0.14464285714285713, 
+                "font": {
+                    "size": 23
+                }, 
+                "showarrow": true
+            }
+        ]
     }, 
     "data": [
         {
-            "locationssrc": "aircar:15:1436b4", 
+            "locationssrc": "aircar:17:48ea8e", 
             "zmax": 6865, 
             "uid": "37e842", 
             "colorscale": [
@@ -33,7 +48,7 @@ var figure = {
                     "rgb(178,10,28)"
                 ]
             ], 
-            "zsrc": "aircar:15:7111fc", 
+            "zsrc": "aircar:17:7bd53e", 
             "type": "choropleth", 
             "zmin": 63, 
             "locations": [
